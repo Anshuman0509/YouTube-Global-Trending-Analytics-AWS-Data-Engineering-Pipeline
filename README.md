@@ -183,10 +183,9 @@ SELECT * FROM raw_statistics_parquet LIMIT 10;
 
 ## 👤 Author
 
-**Anshuman Sharma**
+**Anshuman Singh**
 B.Tech Computer Engineering | Galgotias University (2027)
 - GitHub: [Anshuman0509](https://github.com/Anshuman0509)
-- HuggingFace: [ansh0509](https://huggingface.co/ansh0509)
 
 ---
 
