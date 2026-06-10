@@ -1,0 +1,31 @@
+# YouTube Trending Analytics — Pipeline Configuration
+
+s3:
+  raw_bucket: "de-on-youtube-raw-useast1-580661341769-dev"
+  analytics_bucket: "de-on-youtube-analytics-useast1-580661341769-dev"
+  athena_results_bucket: "aws-athena-query-results-us-east-1-580661341769"
+  glue_assets_bucket: "aws-glue-assets-580661341769-us-east-1"
+  raw_prefix: "youtube/raw_statistics/"
+  analytics_prefix: "youtube/analytics_statistics/"
+
+regions:
+  - ca
+  - gb
+  - us
+  - jp
+  - kr
+  - mx
+  - de
+  - fr
+  - ru
+
+  glue:
+  database_raw: "de-youtube-raw"
+  database_analytics: "de-youtube-analytics"
+  crawler_raw: "de-on-youtube-raw-glue-catalog1-<YOUR_ACCOUNT_ID>"
+  crawler_analytics: "de-youtube-parquet-crawler"
+  job_name: "de-on-youtube-analytics-version"
+  glue_version: "4.0"
+  worker_type: "G.1X"
+  number_of_workers: 2
+  region: "us-east-1"
